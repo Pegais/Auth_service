@@ -1,0 +1,41 @@
+### this file contains the request done through server side rest api
+
+
+
+### insert new user
+POST http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+    "username":"snehal",
+    "fullname":"Pepcoding",
+    "email":"diggidon291@gmail.com",
+    "password":"12345"
+    
+}
+### user singin EndPoint
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    
+    "email":"diggidon291@gmail.com",
+     "password":"12345"
+   
+    
+}
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiZGlnZ2lkb24yOTFAZ21haWwuY29tIiwiaWF0IjoxNjYwNzY1ODE1LCJleHAiOjE2NjEzNzA2MTV9.2pq-lK3hDjDTxFbAxRL7xNSKszA-1GUAFPKBi7VTg_w
+
+### authorization endpoint
+GET  http://localhost:5000/auth/user
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiZGlnZ2lkb24yOTFAZ21haWwuY29tIiwiaWF0IjoxNjYwNzY2NDI4LCJleHAiOjE2NjA3NjY3Mjh9.ZXDQW8EekMslyXVztHzu2lVxSPvYVmMIJ97uxcZiopc
+
+
+### get the refresh tokens from the mongodb and then genrate new accessttoken to authorize.
+GET http://localhost:5000/token/fresh-access-jwt
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiZGlnZ2lkb24yOTFAZ21haWwuY29tIiwiaWF0IjoxNjYwNzY1ODE1LCJleHAiOjE2NjEzNzA2MTV9.2pq-lK3hDjDTxFbAxRL7xNSKszA-1GUAFPKBi7VTg_w 
+
+
+
+
