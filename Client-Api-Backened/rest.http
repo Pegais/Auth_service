@@ -28,7 +28,7 @@ Content-Type: application/json
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiZGlnZ2lkb24yOTFAZ21haWwuY29tIiwiaWF0IjoxNjYwNzY1ODE1LCJleHAiOjE2NjEzNzA2MTV9.2pq-lK3hDjDTxFbAxRL7xNSKszA-1GUAFPKBi7VTg_w
 
 ### authorization endpoint
-GET  http://localhost:5000/auth/user
+GET  http://localhost:5000/auth/profile
 Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiZGlnZ2lkb24yOTFAZ21haWwuY29tIiwiaWF0IjoxNjYwNzY2NDI4LCJleHAiOjE2NjA3NjY3Mjh9.ZXDQW8EekMslyXVztHzu2lVxSPvYVmMIJ97uxcZiopc
 
 
